@@ -4,4 +4,4 @@
 
 ## Code of welcoming conduct
 
-Please really read and understand the [code of conduct](http://maitria.org/coc) It's important to us, and we mean it.
+Please really read and understand the [code of conduct](http://maitria.com/coc) It's important to us, and we mean it.
