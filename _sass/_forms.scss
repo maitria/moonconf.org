@@ -1,0 +1,24 @@
+a {
+  color: $brand-color;
+  font-weight: bold;
+}
+
+form {
+  font-family: Orbitron;
+}
+
+input[type=text] {
+  border: 1px solid $brand-color;
+  line-height: 3;
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+}
+
+input[type="submit"] {
+  font-family: Orbitron;
+  padding: 10px 10px 8px 10px;
+  background: white;
+  border: 0;
+  color: $brand-color;
+}

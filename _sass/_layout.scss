@@ -1,0 +1,118 @@
+.logo img {
+  margin: 0 auto;
+}
+
+.logo-text {
+  font-family: Orbitron;
+  letter-spacing: 20px;
+  color: black;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  text-align: center;
+  border-top: 5px solid $brand-color;
+}
+
+.main-content {
+  @extend %clearfix;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  background: $brand-color;
+  color: white;
+  padding: 20px 0;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+#map {
+    width: 100%;
+    height: 250px;
+}
+
+/**
+ * Sections
+ */
+
+ .section-block {
+
+ }
+
+ .section-block-header {
+   background: $brand-color;
+   color: white;
+   padding-top: 20px;
+ }
+
+.section-block-title {
+  line-height: 1;
+}
+
+ .section-block-bold {
+   padding: 40px 0;
+   background: $brand-color;
+   color: white;
+   font-size: 18px;
+   color: white;
+   margin-bottom: 0;
+
+   a {
+     color: white;
+   }
+ }
+
+.section-block-content {
+  @extend .wrapper;
+}
+
+.section-scholarship {
+  .scholarship-wrapper {
+    padding-top: 20px;
+  }
+  .scholarship-image {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .scholarships-content {
+    float: left;
+    width: 50%;
+  }
+}
+
+.section-moon {
+  background: url("http://etc.usf.edu/clipart/4100/4143/moon_2_lg.gif");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 180px;
+  margin-bottom: 0;
+}
