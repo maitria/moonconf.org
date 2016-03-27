@@ -13,9 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   functional programming community to learn and celebrate together. It's offered
   with love, and we'd love to see you there.
 baseurl: ""
-url: "http://moonconf.com"
+url: "http://moonconf.org"
 twitter_username: moonconf
-github_username:  maitria
+github_username:  maitria/moonconf.org
 
 # Build settings
 markdown: kramdown

@@ -1,5 +1,10 @@
+.logo {
+  padding: $spacing-unit 0;
+}
+
 .logo img {
   margin: 0 auto;
+  width: 50%;
 }
 
 .logo-text {
@@ -44,7 +49,7 @@
 .site-footer {
   background: $brand-color;
   color: white;
-  padding: 20px 0;
+  padding: $spacing-unit 0;
 }
 
 .contact-list,
@@ -69,7 +74,7 @@
  .section-block-header {
    background: $brand-color;
    color: white;
-   padding-top: 20px;
+   padding-top: $spacing-unit;
  }
 
 .section-block-title {
@@ -79,8 +84,6 @@
  .section-block-bold {
    padding: 40px 0;
    background: $brand-color;
-   color: white;
-   font-size: 18px;
    color: white;
    margin-bottom: 0;
 
@@ -95,7 +98,7 @@
 
 .section-scholarship {
   .scholarship-wrapper {
-    padding-top: 20px;
+    padding-top: $spacing-unit;
   }
   .scholarship-image {
     width: 50%;

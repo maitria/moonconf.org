@@ -16,7 +16,6 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -50,7 +49,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: 18px;
 }
 
 /**
@@ -62,6 +61,8 @@ figcaption {
 
 body {
   font-family: Neuton;
+  font-size: 21px;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
