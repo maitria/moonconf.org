@@ -49,7 +49,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: 18px;
+    font-size: $small-font-size;
 }
 
 /**
@@ -61,13 +61,18 @@ figcaption {
 
 body {
   font-family: Neuton;
-  font-size: 21px;
+  font-size: $base-font-size;
   line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Orbitron;
   font-weight: $base-font-weight;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 22px;
 }
 
 a {
@@ -95,7 +100,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: $small-font-size;
     letter-spacing: -1px;
     font-style: italic;
 
@@ -106,7 +111,7 @@ blockquote {
 
 pre,
 code {
-    font-size: 15px;
+    font-size: $small-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;

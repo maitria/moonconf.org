@@ -79,6 +79,11 @@
 
 .section-block-title {
   line-height: 1;
+
+  em {
+    font-size: $small-font-size;
+    vertical-align: middle;
+  }
 }
 
  .section-block-bold {
