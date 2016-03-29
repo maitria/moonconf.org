@@ -1,0 +1,32 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+  font-size: 20px;
+  margin-bottom: $spacing-unit;
+}
+
+thead, tfoot {
+  background-color: #e0e0e0;
+  text-align: left;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+td:first-child, th:first-child {
+  border-left-width: 0;
+}
+
+th, td {
+  padding: 0.5em 1em;
+}
+
+td, th {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 15px;
+}
