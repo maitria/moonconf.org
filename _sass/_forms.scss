@@ -5,6 +5,7 @@ a {
 
 form {
   font-family: Orbitron;
+  margin: 1em 0 1em 0;
 }
 
 input[type=text] {
@@ -19,6 +20,6 @@ input[type="submit"] {
   font-family: Orbitron;
   padding: 10px 10px 8px 10px;
   background: white;
-  border: 0;
+  border: thin solid $brand-color;
   color: $brand-color;
 }
