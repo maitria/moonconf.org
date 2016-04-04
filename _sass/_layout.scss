@@ -74,7 +74,7 @@
  .section-block-header {
    background: $brand-color;
    color: white;
-   padding-top: $spacing-unit;
+   padding-top: 20px;
  }
 
 .section-block-title {
@@ -97,8 +97,12 @@
    }
  }
 
-.section-block-content {
+.wrapper {
   @extend .wrapper;
+}
+
+.section-block-content {
+  padding: $spacing-unit 0 $spacing-unit 0;
 }
 
 .section-scholarship {
