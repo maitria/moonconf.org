@@ -83,17 +83,18 @@ h3 {
 }
 
 a {
-  color: rgba($brand-color-blue, 0.53);
+  color: rgba($brand-color-blue, 0.50);
   font-weight: bold;
   text-decoration: none;
+  transition: all 300ms ease;
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    border-bottom: 1px solid rgba($brand-color-blue, 0.50);
   }
-  // &:visited {
-  //   color: $brand-color;
-  // }
+  &:visited {
+    color: $brand-color;
+    border-bottom: 1px solid rgba($brand-color, 0.50);
+  }
 }
 
 ul, ol {
