@@ -51,11 +51,24 @@
    background: $brand-color;
    color: white;
    margin-bottom: 0;
+   text-align: center;
 
    a {
      color: white;
    }
+   h3 {
+     border-bottom: 0;
+     color: white;
+     margin-bottom: 0;
+   }
+   .wrapper {
+     padding: 0;
+   }
  }
+
+.section-block-content-bold-alt {
+  background: $brand-color-green;
+}
 
 .wrapper {
   @extend .wrapper;
