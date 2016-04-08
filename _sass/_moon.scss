@@ -1,0 +1,55 @@
+.moon {
+  position: relative;
+  z-index: 0;
+}
+
+.site-footer .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer {
+  overflow: hidden;
+}
+
+$color-map: (#2F1038, #411B44,#582C55 ,#743560, #994A77, #BA6090, #D07DA9, #E4A1BD ,#F4C3D1, #FBF5F7, #F4C3D1);
+
+[class^="circle"] {
+    padding: 15px;
+    margin:  0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.circle-1 {
+  width: 500px;
+  height: 500px;
+}
+
+@for $i from 1 through 10 {
+  .circle-#{$i} {
+    background-color: nth($color-map, $i);
+    width: 500px - ($i * 40px);
+    height: 500px - ($i * 40px);
+  }
+}
+
+.circle-10,
+.circle-11 {
+  box-shadow: none;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.circle-11 {
+  position: absolute;
+  top: 45px;
+  left: 75px;
+  background-color: nth($color-map, 9);
+  transition: all 0.5s;
+}

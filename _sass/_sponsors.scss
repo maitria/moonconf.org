@@ -7,12 +7,20 @@
 }
 
 .sponsor {
-  width: 33.33%;
+  width: 50%;
   display: inline-block;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-bottom: $spacing-unit;
   vertical-align: top;
+
+  @include media-query($on-palm) {
+    width: 75%;
+  }
+}
+
+.sponsor-bio {
+
 }
 
 .sponsor-cta {
