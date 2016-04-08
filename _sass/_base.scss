@@ -87,13 +87,11 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: all 300ms ease;
+  border-bottom: 1px solid transparent;
 
   &:hover {
+    color: rgba($brand-color-blue, 0.75);
     border-bottom: 1px solid rgba($brand-color-blue, 0.50);
-  }
-  &:visited {
-    color: $brand-color;
-    border-bottom: 1px solid rgba($brand-color, 0.50);
   }
 }
 
