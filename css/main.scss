@@ -23,11 +23,8 @@ $green-color-light: rgba(0, 153, 153, 0.14);
 
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -37,19 +34,20 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "forms",
-        "tables",
-        "person"
+  "base",
+  "layout",
+  "syntax-highlighting",
+  "forms",
+  "tables",
+  "person",
+  "sponsors",
+  "header",
+  "footer"
 ;

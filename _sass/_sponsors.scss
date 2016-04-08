@@ -1,0 +1,20 @@
+.sponsors {
+  text-align: center;
+  font-size: 0; // for inline-block .sponsor elements. See https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+  p {
+    font-size: $base-font-size;
+  }
+}
+
+.sponsor {
+  width: 33.33%;
+  display: inline-block;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  vertical-align: top;
+}
+
+.sponsor-cta {
+  padding: $spacing-unit;
+}

@@ -1,0 +1,19 @@
+.site-header {
+  text-align: center;
+  border-top: 5px solid $brand-color;
+}
+
+.logo {
+  padding: $spacing-unit 0;
+}
+
+.logo img {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.logo-text {
+  font-family: Orbitron;
+  letter-spacing: 20px;
+  color: black;
+}
