@@ -1,6 +1,8 @@
-.moon {
-  position: relative;
+.glow {
   z-index: 0;
+  top: -25px;
+  left: 50%;
+  position: absolute;
 }
 
 .site-footer .wrapper {
@@ -10,46 +12,36 @@
 
 .site-footer {
   overflow: hidden;
+  position: relative;
 }
 
-$color-map: (#2F1038, #411B44,#582C55 ,#743560, #994A77, #BA6090, #D07DA9, #E4A1BD ,#F4C3D1, #FBF5F7, #F4C3D1);
+$rainbow: (#42BDE8, #61d688, #ee4035, #f37736, #fdf498, #7bc043, #0392cf, #42BDE8, #FFF776, white);
 
-[class^="circle"] {
-    padding: 15px;
-    margin:  0 auto;
+.glow * {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    -webkit-backface-visibility: hidden;
 }
 
-.circle-1 {
-  width: 500px;
-  height: 500px;
-}
+$color: darken($brand-color, 10%) !default;
 
 @for $i from 1 through 10 {
-  .circle-#{$i} {
-    background-color: nth($color-map, $i);
+  .ring-#{$i} {
+    $ammount: percentage(($i + 3) / 100);
+    $color: lighten($color, $ammount);
+    background-color: $color;
+
     width: 500px - ($i * 40px);
     height: 500px - ($i * 40px);
+
+    $time: 100 * $i + ms;
+    transition: all $time ease;
+
+    &:hover {
+      background-color: nth($rainbow, $i);
+    }
   }
-}
-
-.circle-10,
-.circle-11 {
-  box-shadow: none;
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-}
-
-.circle-11 {
-  position: absolute;
-  top: 45px;
-  left: 75px;
-  background-color: nth($color-map, 9);
-  transition: all 0.5s;
 }

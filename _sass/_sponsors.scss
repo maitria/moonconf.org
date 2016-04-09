@@ -6,13 +6,17 @@
   }
 }
 
+.sponsor-section-title {
+  margin-bottom: $spacing-unit;
+}
+
 .sponsor {
   width: 50%;
   display: inline-block;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-bottom: $spacing-unit;
-  vertical-align: top;
+  vertical-align: bottom;
 
   @include media-query($on-palm) {
     width: 75%;
@@ -20,9 +24,6 @@
 }
 
 .sponsor-bio {
-
-}
-
-.sponsor-cta {
-  padding: $spacing-unit;
+  border-top: 1px solid black;
+  padding-top: $spacing-unit;
 }
