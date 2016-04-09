@@ -1,14 +1,15 @@
 <header class="site-header">
-
+  <video class="video-background" autoplay="" loop="" poster="">
+    <source src="/assets/video/space.mp4" type="video/mp4">
+  </video>
   <div class="wrapper">
-      <div class="logo">
+    <div class="logo-container">
       <a class="logo-icon" href="{{ site.baseurl }}/">
-        <img src="/css/logo.png" alt="Mountain and stars logo.">
+        {% include logo.html %}
       </a>
       <a class="logo-text" class="site-title" href="{{ site.baseurl }}/">
         {{ site.title }}
       </a>
     </div>
   </div>
-
 </header>

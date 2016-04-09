@@ -20,12 +20,12 @@ layout: default
   <section class="section-block section-scholarship">
     <header class="section-block-header">
       <div class="wrapper">
-        <h2 class="section-block-title">Tickets & Scholarships</h2>
+        <h2 class="section-block-title">Tickets</h2>
       </div>
     </header>
     <div class="section-block-content wrapper">
       <div class="scholarship-wrapper">
-        <img class="scholarship-image" src="/css/computer.png" alt="Girl looking at a picture planets on a computer.">
+        <img class="scholarship-image" src="/assets/img/computer.png" alt="Girl looking at a picture planets on a computer.">
         <div class="scholarship-content">
           <p>Set your own ticket price. ($50 suggested) <a href="https://ti.to/moonconf/moonconf-2016">Get tickets here!</a></p>
           <p>Any profits will go to support <a href="http://www.blackgirlscode.com/">Black Girls CODE</a> after the event.</p>
@@ -50,7 +50,7 @@ layout: default
       </div>
     </header>
     <div class="section-block-content wrapper">
-      <img src="/css/sun.png" alt="Close up image of the sun.">
+      <img src="/assets/img/sun.png" alt="Close up image of the sun.">
       <h3>Speakers!</h3>
       <p>Day one will be a full day of awesome talks, ranging from beginner-friendly to mind-blowing. The call for proposals is open now! Please <a href="https://www.papercall.io/moonconf">submit your proposal here!</a>.</p>
       <h3>Unconf</h3>
@@ -62,23 +62,19 @@ layout: default
       </blockquote>
       <p>We'll start the day with selecting the day's sessions as a group. Then folks will break off to learn more about what excites us.</p>
     </div>
-  </section>
-
-  <section class="section-block">
-    <header class="section-block-header">
-      <div class="wrapper">
-        <h2 class="section-block-title">Get updates</h2>
+    <section class="section-block-content wrapper">
+      <div class="cta">
+        <h2>Get Updates</h2>
+        <p>Get notified with general updates about dates, speakers, venue, etc.</p>
+        <form action="https://tinyletter.com/moonconf" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/moonconf', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <label for="tlemail">Email Address:</label>
+          <input type="text" name="email" id="tlemail" />
+          <input type="hidden" value="1" name="embed"/>
+          <input type="submit" value="Sign up" />
+        </form>
+        {% include stars.html %}
       </div>
-    </header>
-    <div class="section-block-content wrapper">
-      <p>If you'd like to get updates, please enter your email here.</p>
-      <form action="https://tinyletter.com/moonconf" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/moonconf', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-        <label for="tlemail">Email Address:</label>
-        <input type="text" name="email" id="tlemail" />
-        <input type="hidden" value="1" name="embed"/>
-        <input type="submit" value="Sign up" />
-      </form>
-    </div>
+    </section>
   </section>
 
   <section class="section-block">
@@ -130,27 +126,37 @@ layout: default
   <section class="section-block">
     <header class="section-block-header">
       <div class="wrapper">
-        <h2 class="section-block-title">Sponsors</h2>
+        <h2 class="section-block-title">Our Sponsors</h2>
       </div>
     </header>
     <div class="section-block-content wrapper sponsors">
-      <h3>Platinum</h3>
-      <h3>Gold</h3>
-      <h3>Silver</h3>
-      <h3>Bronze</h3>
+      <h3 class="sponsor-section-title">Platinum</h3>
+      <h3 class="sponsor-section-title">Gold</h3>
+      <h3 class="sponsor-section-title">Silver</h3>
+      <h3 class="sponsor-section-title">Bronze</h3>
       <article class="sponsor">
         <img src="http://maitria.com/assets/header-logo.png" alt="Maitria Logo">
+        <div class="sponsor-bio">
+          <p>Making the world a little gentler for developers & tech teams. Geek joy, mindful code and mindful human connection. @onealexharms @eraserhd @kaleidic.</p>
+        </div>
       </article>
       <article class="sponsor">
         <img src="https://www.papercall.io/assets/logo-papercall.svg" alt="Papercall Logo">
+        <div class="sponsor-bio">
+          <p>PaperCall enables event organizers to easily manage their call for papers and talk submissions, without relying on tools such as Google Forms, WuFoo Forms, and other less than perfect systems.</p>
+        </div>
       </article>
       <article class="sponsor">
         <img src="https://www.pobox.com/images/matched-logo.png" alt="Pobox Logo">
+        <div class="sponsor-bio">
+          <p>Pobox wants you to own your email address for life. Their <a href="https://www.pobox.com/features">useful features</a> let you decide how email should work for you.</p>
+        </div>
       </article>
 
-      <article class="section-block section-block-bold section-block-content-bold-alt sponsor-cta">
+      <article class="section-block section-block-bold section-block-content-bold-alt cta">
         <h2>Become a Sponsor</h2>
         <p>If you're interested in supporting Moonconf, take a moment to read the  <a href="/sponsorship-prospectus/">Sponsorship Prospectus!</a></p>
+        {% include stars.html %}
       </article>
   </section>
 

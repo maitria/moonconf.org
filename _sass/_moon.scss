@@ -1,0 +1,47 @@
+.glow {
+  z-index: 0;
+  top: -25px;
+  left: 50%;
+  position: absolute;
+}
+
+.site-footer .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer {
+  overflow: hidden;
+  position: relative;
+}
+
+$rainbow: (#42BDE8, #61d688, #ee4035, #f37736, #fdf498, #7bc043, #0392cf, #42BDE8, #FFF776, white);
+
+.glow * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+}
+
+$color: darken($brand-color, 10%) !default;
+
+@for $i from 1 through 10 {
+  .ring-#{$i} {
+    $ammount: percentage(($i + 3) / 100);
+    $color: lighten($color, $ammount);
+    background-color: $color;
+
+    width: 500px - ($i * 40px);
+    height: 500px - ($i * 40px);
+
+    $time: 100 * $i + ms;
+    transition: all $time ease;
+
+    &:hover {
+      background-color: nth($rainbow, $i);
+    }
+  }
+}
