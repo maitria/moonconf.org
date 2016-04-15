@@ -1,37 +1,5 @@
 .cta {
   text-align: center;
-  color: white;
   padding: $spacing-unit;
-  background: black;
   overflow: hidden;
-  position: relative;
-}
-
-.star {
-  z-index: 1;
-  background: white;
-  border-radius: 100%;
-  position: absolute;
-  opacity: 1;
-  animation: twinkle 1s linear infinite;
-}
-
-@for $i from 0 through 100 {
-  .star:nth-child(#{$i})  {
-    $d: random(2) + px;
-    width: $d;
-    height: $d;
-    left: random(800) + px;
-    bottom: random(300) + px;
-    animation-delay: $i * 0.01s;
-  }
-}
-
-@keyframes twinkle {
-  from {
-    opacity:1;
-  }
-  to {
-    opacity:0.2;
-  }
 }

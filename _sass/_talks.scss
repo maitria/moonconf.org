@@ -1,0 +1,59 @@
+.talk {
+  color: $grey-color;
+  margin-bottom: $spacing-unit;
+}
+
+// .twitter-share-button {
+//   float: right;
+// }
+
+.talk:nth-last-of-type(odd) {
+  border-left: 4px solid $brand-color-blue;
+  padding-left: $spacing-unit / 2;
+}
+
+.talk:nth-last-of-type(even) {
+  border-right: 4px solid $brand-color-blue;
+  padding-right: $spacing-unit / 2;
+  text-align: right;
+}
+
+.talk-header {
+  border-bottom: 1px solid $brand-color;
+  overflow: hidden;
+}
+
+.talk-title {
+  color: $brand-color-blue;
+  border-bottom: 0;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+}
+
+.talk-speaker {
+  font-size: $small-font-size;
+}
+
+.talk-description {
+  font-size: $small-font-size;
+  font-style: italic;
+}
+
+.talk-hidden {
+  opacity: 0.4;
+  .talk-header {
+    border-bottom: 0;
+  }
+  .talk-title {
+    background: $brand-color-blue;
+    width: 75%;
+    color: black;
+    padding: 4px 30px 0 30px;
+  }
+  .talk-description {
+    display: inline;
+    background: $brand-color;
+    color: $brand-color;
+  }
+}

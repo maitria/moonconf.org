@@ -42,6 +42,7 @@ layout: default
     </header>
     <div id="map"></div>
   </section>
+  {% include talks.html %}
 
   <section class="section-block">
     <header class="section-block-header">
@@ -63,7 +64,7 @@ layout: default
       <p>We'll start the day with selecting the day's sessions as a group. Then folks will break off to learn more about what excites us.</p>
     </div>
     <section class="section-block-content wrapper">
-      <div class="cta">
+      <div class="cta stars">
         <h2>Get Updates</h2>
         <p>Get notified with general updates about dates, speakers, venue, etc.</p>
         <form action="https://tinyletter.com/moonconf" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/moonconf', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
@@ -153,7 +154,7 @@ layout: default
         </div>
       </article>
 
-      <article class="section-block section-block-bold section-block-content-bold-alt cta">
+      <article class="section-block section-block-bold cta stars">
         <h2>Become a Sponsor</h2>
         <p>If you're interested in supporting Moonconf, take a moment to read the  <a href="/sponsorship-prospectus/">Sponsorship Prospectus!</a></p>
         {% include stars.html %}
