@@ -1,6 +1,8 @@
 <article class="talk">
   <header class="talk-header">
-    <h3 class="talk-title" id="{{ include.link }}"><a href="http://moonconf.org/#{{ include.link }}">{{ include.title }}</a></h3>
+    <a href="http://moonconf.org/#{{ include.link }}">
+      <h3 class="talk-title" id="{{ include.link }}">{{ include.title }}</h3>
+    </a>
   </header>
   <div class="talk-speaker">
     with <a href="https://twitter.com/{{ include.twitter }}">{{ include.speaker }}</a>
@@ -9,5 +11,9 @@
     {% endif %}
   </div>
   <p class="talk-description">{{ include.description }}</p>
+  <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Looking%20forward%20to%20%22{{ include.title }}%22%20@moonconf&url=http://moonconf.org/#{{ include.link }}"
+    data-size="large">
+    Tweet</a>
 
 </article>

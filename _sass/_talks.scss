@@ -21,6 +21,12 @@
 .talk-header {
   border-bottom: 1px solid $brand-color;
   overflow: hidden;
+  a {
+    transition: none;
+  }
+  a:hover {
+    border-bottom: 0;
+  }
 }
 
 .talk-title {
@@ -29,6 +35,11 @@
   display: inline-block;
   font-weight: bold;
   margin: 0;
+  max-width: 75%;
+
+  @media (max-width: 400px) {
+    max-width: 100%;
+  }
 }
 
 .talk-speaker {
