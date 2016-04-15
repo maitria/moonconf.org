@@ -51,9 +51,14 @@
     {% include talk.html
       title='Fetching Moths from the Works: Correctness Methods in Software'
       speaker="Brian L. Troutwine"
-      description="We live in a nice world. There’s a wealth of historical thought on achieving correctness in software–shipping code that does only what is intended, not less and not more–and there are a whole bunch of methods available to us as practitioners. Some of these are hard to apply, some are easy. For instance, case testing is widely used and considered standard practice. Property testing is understood to exist but not widely used. The application of advanced logics? Way out
-      there.If you look around you’ll find a lot of software fails a lot of the time. Why is that?In this talk I’ll give an overview of the methods for producing correct systems and will discuss each in its historical context. With each method, we’ll keep an eye out for present applications and the difficulty of doing so. We’ll discuss why there’s so much buggy software in the world. I expect there will be talk of spaceships a bit.By the end of this talk you ought to be able to make reasoned decisions about applying correctness methods in your own work and have a good shot at building better software."
+      description="<p>We live in a nice world. There’s a wealth of historical thought on achieving correctness in software–shipping code that does only what is intended, not less and not more–and there are a whole bunch of methods available to us as practitioners. Some of these are hard to apply, some are easy. For instance, case testing is widely used and considered standard practice. Property testing is understood to exist but not widely used. The application of advanced logics? Way out there.</p><p>If you look around you’ll find a lot of software fails a lot of the time. Why is that?</p><p>In this talk I’ll give an overview of the methods for producing correct systems and will discuss each in its historical context. With each method, we’ll keep an eye out for present applications and the difficulty of doing so. We’ll discuss why there’s so much buggy software in the world. I expect there will be talk of spaceships a bit.</p><p>By the end of this talk you ought to be able to make reasoned decisions about applying correctness methods in your own work and have a good shot at building better software.</p>"
       twitter="bltroutwine"
+    %}
+    {% include talk.html
+      title='Recursion: Where Functional Programming Hits Bottom'
+      speaker="Greg Pfeil"
+      description="What are the problems with recursion? How can they be resolved while improving both the performance and clarity of your code? In this talk, we’ll learn how to separate recursion from the semantics of our program using generalized recursion schemes. We’ll discover the benefits that come from that approach and identify some pitfalls that may seem helpful at first. We will also see how to adopt this style gradually in existing projects, gaining the benefits incrementally without disrupting code that already works. Most of the content is language agnostic (but typed), with specific examples given in Haskell and Scala."
+      twitter="sellout"
     %}
     {% include talk.html
       title='Planet 9 from Other Space, and other things found in Big(ger) Data'
