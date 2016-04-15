@@ -86,7 +86,13 @@
       title='Bracer: Transforming Real-World Languages with Coproducts and Recursion Schemes'
       speaker="Patrick Thomson"
       description="Curly-brace languages won the syntax war: the pattern of delimiting scope with curly braces appears countless programming languages, data interchange formats, and configuration files. However, the small but significant syntactic differences between these languages means that APIs for transforming, filtering, and modifying said languages are, when they exist at all, very specific and inextensible. Bracer is a Haskell-based toolkit for parsing various curly-brace languages that seeks to change this. I’ll outline the challenges associated with building an extensible language workbench, and how borrowing seemingly-abstract concepts (recursion schemes and coproduces) from the functional-programming literature enables us to parse and transform source code safely, concisely, and efficiently."
-      twitter="patrickt"
+      twitter="importantshock"
+    %}
+    {% include talk.html
+      title='Zombie-pocalypse: Epidemic Gossip in Haskell'
+      speaker="Jacques Fuentes"
+      description="<p>Zombies are scary because they’ll eat your brains. Epidemic gossip protocols are awesome because they work algorithmically similar to a Zombie apocalpyse minus the cannabalism.</p><p>See what it’s like to be a Zombie by learning about an epidemic gossip protocol, called SWIM, written in Haskell. When a Zombie eats a human’s brains they become virally infected which spreads rather effectively in a biological community. So too does a few RPC message types: ping/ack/ping-req, over UDP, with understandable implementation details. We’ll see how a cluster of nodes knows when new members join or die and how that state is propagated in a system by understanding how quickly Zombies can destroy humanity.</p><p>Distributed systems are hard and many Haskell-naysayers think IO is difficult in the language or is reason to avoid it. I’ll show non-trivial distributed systems can be built in Haskell with all of its wonderful benefits: reasoning, safety, correctness, and maintainability. I’ll also cover how the system was developed and tested against the excellent implementation of SWIM in Go by Hashicorp: memberlist.</p>"
+      twitter="jpfuentes2"
     %}
     {% include talk.html
       title='Planet 9 from Other Space, and other things found in Big(ger) Data'
