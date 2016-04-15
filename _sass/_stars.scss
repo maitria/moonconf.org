@@ -1,7 +1,8 @@
 .stars {
-  color: $grey-color;
+  color: white;
   background: black;
   position: relative;
+  overflow: hidden;
 }
 
 .star {
@@ -22,13 +23,17 @@
   }
 }
 
-@for $i from 0 through 100 {
-  .star:nth-child(#{$i})  {
-    $d: random(2) + px;
-    width: $d;
-    height: $d;
-    left: random(800) + px;
-    bottom: random(300) + px;
-    animation-delay: $i * 0.01s;
+@mixin stars($num, $left, $right) {
+
+  @for $i from 0 through $num {
+    & > .star:nth-child(#{$i})  {
+      $d: random(2) + px;
+      width: $d;
+      height: $d;
+      left: random($left) + px;
+      top: random($right) + px;
+      animation-delay: $i * 0.01s;
+    }
   }
+
 }

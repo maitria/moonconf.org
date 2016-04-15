@@ -12,10 +12,21 @@ input[type=text] {
   display: block;
 }
 
-input[type="submit"] {
-  font-family: Orbitron;
-  padding: 10px 10px 8px 10px;
-  background: white;
-  border: thin solid $brand-color;
-  color: $brand-color;
+
+.button {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 15px 15px 10px 15px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
 }

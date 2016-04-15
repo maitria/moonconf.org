@@ -1,11 +1,15 @@
-.talk {
-  color: $grey-color;
-  margin-bottom: $spacing-unit;
+.talks {
+  @include stars(200, 1500, 3000);
 }
 
-// .twitter-share-button {
-//   float: right;
-// }
+.talks-intro {
+  margin-bottom: $spacing-unit * 3;
+}
+
+.talk {
+  color: $grey-color;
+  margin-bottom: $spacing-unit * 2;
+}
 
 .talk:nth-last-of-type(odd) {
   border-left: 4px solid $brand-color-blue;

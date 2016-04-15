@@ -1,7 +1,7 @@
 <section class="section-block talks stars">
   <div class="section-block-content wrapper">
-    <h2>Talks and Talks</h2>
     <div class="talks-intro">
+      <h2>Talks and Talks</h2>
       <p>
         On May 26th & 27th you will learn from an array of amazing speakers
         who cover a slew of interesting topics ranging from mathematics to language
@@ -120,24 +120,5 @@
     {% include talk-hidden.html %}
     {% include talk-hidden.html %}
   </div>
+  {% include stars.html %}
 </section>
-
-
-<script>
-  window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-  }(document, "script", "twitter-wjs"));
-</script>
