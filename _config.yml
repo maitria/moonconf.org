@@ -10,8 +10,8 @@ title: moonconf
 email: moonconf@maitria.com
 description: > # this means to ignore newlines until "baseurl:"
   Moonconf is a conference put together quickly to provide a place for the
-  functional programming community to learn and celebrate together. It's offered
-  with love, and we'd love to see you there. More details coming soon!
+  functional programming community to learn and celebrate together.
+  It's offered with love, and we'd love to see you there.
 baseurl: ""
 url: "http://moonconf.org"
 twitter_username: moonconf
