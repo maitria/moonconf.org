@@ -24,7 +24,42 @@
   }
 }
 
+.sponsor-silver {
+  width: 60%;
+  display: inline-block;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  vertical-align: bottom;
+
+  @include media-query($on-palm) {
+    width: auto;
+    display: block;
+  }
+}
+
+.sponsor-bronze {
+  width: 40%;
+  display: inline-block;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  vertical-align: bottom;
+
+  @include media-query($on-palm) {
+    width: auto;
+    display: block;
+  }
+}
+
 .sponsor-bio {
-  border-top: 1px solid black;
   padding-top: $spacing-unit;
 }
+
+.sponsor-bio-bronze {
+  padding-top: $spacing-unit;
+  p {
+    font-size: 18px;
+  }
+}
+
