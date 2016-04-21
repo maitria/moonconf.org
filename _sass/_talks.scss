@@ -3,11 +3,11 @@
 }
 
 .talks-intro {
-  margin-bottom: $spacing-unit * 3;
+  margin-bottom: $spacing-unit * 2;
 }
 
 .talk {
-  color: $grey-color;
+  color: $text-color;
   margin-bottom: $spacing-unit * 2;
 }
 
@@ -25,16 +25,25 @@
 .talk-header {
   border-bottom: 1px solid $brand-color;
   overflow: hidden;
-  a {
-    transition: none;
-  }
-  a:hover {
-    border-bottom: 0;
+  h3 {
+    a:link {
+      color: $brand-color;
+    }
+    a:visited {
+      color: $brand-color;
+    }
+    a:hover {
+      color: $brand-color-blue;
+      transition: none;
+      border-bottom: 0;
+    }
+    a:active {
+      color: $brand-color-blue;
+    }
   }
 }
 
 .talk-title {
-  color: $brand-color-blue;
   border-bottom: 0;
   display: inline-block;
   font-weight: bold;
@@ -47,6 +56,20 @@
 }
 
 .talk-speaker {
+  a:link {
+    color: $brand-color;
+  }
+  a:visited {
+    color: $brand-color;
+  }
+  a:hover {
+    transition: none;
+    color: $brand-color-blue;
+    border-bottom: 0;
+  }
+  a:active {
+    color:$brand-color-blue;
+  }
   font-size: $mid-font-size;
 }
 

@@ -1,13 +1,11 @@
 <article class="talk">
   <header class="talk-header">
-    <a href="http://moonconf.org/#{{ include.link }}">
-      <h3 class="talk-title" id="{{ include.link }}">{{ include.title }}</h3>
-    </a>
+    <h3 class="talk-title" id="{{ include.link }}"><a href="http://moonconf.org/#{{ include.link }}">{{ include.title }}</a></h3>
   </header>
   <div class="talk-speaker">
     with <a href="https://twitter.com/{{ include.twitter }}">{{ include.speaker }}</a>
     {% if include.co-speaker %}
-      & <a href="https://twitter.com/{{ include.co-twitter }}">{{ include.co-speaker }}</a>
+      &amp; <a href="https://twitter.com/{{ include.co-twitter }}">{{ include.co-speaker }}</a>
     {% endif %}
   </div>
   <p class="talk-description">{{ include.description }}</p>
