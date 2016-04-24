@@ -90,9 +90,23 @@
   }
 }
 
-.map {
-  img {
-    float: left; 
-    margin-right: 5px;
-    }
-  }
+.key {
+  overflow: hidden;
+}
+
+.key-half {
+  position: relative;
+  right: -7px;
+}
+
+.key-img {
+  float: left;
+}
+
+.key-body {
+  padding-top: $spacing-unit;
+}
+
+.key-address {
+  display: block;
+}
