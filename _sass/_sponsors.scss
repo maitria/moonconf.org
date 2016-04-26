@@ -27,8 +27,8 @@
 .sponsor-silver {
   width: 50%;
   display: inline-block;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  padding-left: $spacing-unit/2;
+  padding-right: $spacing-unit/2;
   margin-bottom: $spacing-unit;
   vertical-align: top;
 
@@ -41,10 +41,11 @@
 .sponsor-bronze {
   width: 33%;
   display: inline-block;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  padding-left: $spacing-unit/3;
+  padding-right: $spacing-unit/3;
   margin-bottom: $spacing-unit;
   vertical-align: top;
+  text-align: left;
 
   @include media-query($on-palm) {
     width: auto;
@@ -59,7 +60,14 @@
 .sponsor-bio-bronze {
   padding-top: $spacing-unit;
   p {
-    font-size: 18px;
+    font-size: $small-font-size;
+  }
+}
+
+.sponsor-bio-silver {
+  padding-top: $spacing-unit;
+  p {
+    font-size: $mid-font-size;
   }
 }
 
