@@ -25,18 +25,31 @@
       co-twitter="dviramontes_"
     %}
     {% include talk.html
-      title='Safe, Humane Environments Are Major :key:'
-      link="safe-environments"
-      speaker="Miql Alexander"
-      description="<p>Software development requires trusting your team. Attending conferences requires trusting attendees, speakers, and organizers. Those who are under-represented require different or emphasized forms of safety and trust that dominant culture takes for granted. Multiple spaces necessitate equity if the tech industry truly is dedicated to “diversity” and “inclusion.” In this talk, we’ll discuss and share experiences of dominant spaces and how they have discouraged safety. Most importantly, we’ll examine how to shift to safe, humane environments and discover how they look, feel and benefit.</p>"
-      twitter="MiQL"
+      title='Session Types for Me and You and Everyone We Know!'
+      link="session-types"
+      speaker="Zeeshan Lakhani"
+      description="<p>Concurrent and distributed systems are unwieldy, and many of the patterns we program them with are informally characterized. How can we provide safety mechanisms at runtime and structure inter-process communication? One approach is session types, a formalism to model distributed communicating processes, describing protocols as type abstractions. This talk will cover the basics of what session types are and how they provide a safety net for asynchronous interaction across our increasingly complex platforms and networks.</p><p>The flow of this talk will start with the motivation for the need to formalize communication patterns across actors/channels/processes. Then, I’ll define what session types are and briefly describe their ongoing history. Finally, I’ll describe a couple specific approaches, geared around functional dynamic languages as a form of runtime rejection, for which session types can be applied.</p>"
+      twitter="zeeshanlakhani"
+    %}
+    {% include talk.html
+      title='Tulip: A Well-Balanced Language'
+      link="tulip"
+      speaker="Jeanine Adkisson"
+      description="<p>There are a lot of competing ideas about what makes a language “good”. This is because we as language designers still have no idea what we’re doing. The design of Tulip is based on careful study of a wide variety of popular and esoteric programming languages over about 4 years. Its runtime takes cues from Erlang, and its syntax is slightly like ML, but with a few key innovations designed for repl ergonomics. Tulip is one of the new languages to come out of the language community Snek, emphasizing languages by minority designers and implementers.</p>"
+      twitter="jneen_"
+    %}
+    {% include talk.html
+      title='It’s Complicated: Codes of Conduct and Inclusive Community Building'
+      link="its-complicated"
+      speaker="Christie Koehler"
+      description="<p>Why are some communities able to quickly and effortlessly adopt a code of conduct while others become mired in conflict and division whenever the topic arises?</p><p>In this talk I’ll explore what I see as the main reasons we experience conflict when talking about adopting codes of conduct in our communities: misalignment of perceived shared values, the relative difficulty of facilitating organizational change, and lack of governance infrastructure and non-technical leadership.</p><p>Next I’ll offer some strategies for making things better: working to close the non-technical leadership gap in our FLOSS communities, learning to embrace multiple viewpoints and integrate conflict productively, and responding compassionately to people’s sense of loss brought about by change.</p>"
+      twitter="christi3k"
     %}
     {% include talk.html
       title='Get Swifty 2 Electric Bugaloo or: Intro to Functional Programming with Swift'
       link="get-swifty"
       speaker="Basel Farag"
       description="<p>“@SwiftLang is probably a better, and more valuable, vehicle for learning functional programming than Haskell.” —Erik Meijer</p><p>That may be a stretch with Swift’s recent changes—but it’s not entirely without basis. In this talk, I will show why Swift is a great choice for diving into functional programming. I’ll explain these specific language features: generics, value types, protocols, and closures. I’ll also share my advice for how to approach Swift with the aim of learning FP for the first time.</p>"
-      twitter="BaselNotBasil"
     %}
     {% include talk.html
       title="A Developer’s Guide to Being a Mathematician"
@@ -46,12 +59,11 @@
       twitter="legittalon"
     %}
     {% include talk.html
-
-      title='Point-Free or Die: Tacit Programming in Haskell and Beyond'
-      link="point-free-or-die"
-      speaker="Amar Shah"
-      description="<p>Point-free syntax allows you to define functions without naming their arguments. But is “point-free” just point-less? Ostensibly, tacit definitions can calibrate code to the appropriate level of abstraction. But which level is most appropriate? When is a point-free definition better than its “pointed” variation? And when is it spectacularly worse?</p><p>Let’s be explicit about tacit programming. Let’s apply eta-reduction to produce it. Let’s probe its origins in John Backus’ function-level programming. Let’s hunt for it in trusted libraries. Let’s see it amplified in languages designed for maximum quiet. Let’s speak at length, about the unspoken.</p>"
-      twitter="amar47shah"
+      title='Zombie-pocalypse: Epidemic Gossip in Haskell'
+      link="zombie-pocalypse"
+      speaker="Jacques Fuentes"
+      description="<p>Zombies are scary because they’ll eat your brains. Epidemic gossip protocols are awesome because they’re like a zombie apocalpyse—minus the cannabalism. See what it’s like to be a zombie by learning about a Haskell implementation of SWIM, an epidemic gossip protocol.</p><p>When a zombie eats your brains, it becomes infected with a virus that spreads effectively in a biological community. By understanding how zombies will destroy humanity, we’ll see how a cluster of nodes knows when new members join or die, and how that state is propagated in a system.</p><p>Distributed systems are hard, and many Haskell-naysayers think IO is difficult. I’ll show that non-trivial distributed systems can be developed and tested in Haskell with all of its wonderful benefits: reasoning, safety, correctness, and maintainability.</p>"
+      twitter="jpfuentes2"
     %}
     {% include talk.html
       title='Program Derivation for Functional Programs'
@@ -61,11 +73,25 @@
       twitter="Felienne"
     %}
     {% include talk.html
-      title='Negotiating Salary for Women in Tech'
-      link="negotiating-salary"
-      speaker="Ashley Powell"
-      description="<p>I’ve been negotiating salary and rate with and on behalf of IT consultants for years, and firmly believe that a major contributor to the wage gap is that women don’t negotiate their salaries. So from the first job we take, we’re behind the curve and never catch up.</p><p>I’ll present the theories behind how to negotiate and demonstrate how it should actually sound. We’ll cover how to understand your worth, when to stick to your guns and how to use benefits and flexibility to build a great package for yourself. I’ll give an insider’s look into negotiating with recruiters, and give you the tools to establish a firm footing for a great salary negotiation.</p>"
-      twitter="AshleyPQPQP"
+      title='Planet 9 from Other Space, and Other Things Found in Big(ger) Data'
+      link="planet-9"
+      speaker="Dr. Pamela Gay"
+      description="<p>Modern all-sky surveys are enabling new kinds of discoveries by allowing statistical studies to trace out the locations of hidden planets, pressures, and exoplanets. The most exciting of these discoveries is Planet 9, a new world predicted by the orbits of icy Kuiper Belt Objects and defined by where it <strong>isn’t</strong> in all-sky surveys. It follows on the heels of projects that map out invisible dark matter and describe Dark Energy’s expansion of the universe.This talk will look at how massive data collections have allowed us to detect these and other things that can’t be seen, and how future data sets will make today’s Big Data seem small.</p>"
+      twitter="starstryder"
+    %}
+    {% include talk.html
+      title='Safe, Humane Environments Are Major :key:'
+      link="safe-environments"
+      speaker="Miql Alexander"
+      description="<p>Software development requires trusting your team. Attending conferences requires trusting attendees, speakers, and organizers. Those who are under-represented require different or emphasized forms of safety and trust that dominant culture takes for granted. Multiple spaces necessitate equity if the tech industry truly is dedicated to “diversity” and “inclusion.” In this talk, we’ll discuss and share experiences of dominant spaces and how they have discouraged safety. Most importantly, we’ll examine how to shift to safe, humane environments and discover how they look, feel and benefit.</p>"
+      twitter="MiQL"
+    %}
+    {% include talk.html
+      title='Embarking with Elm'
+      link="embarking-with-elm"
+      speaker="Bradley Grzesiak"
+      description="<p>Elm touts itself as “the best of functional programming in your browser,” so we’ll explore that assertion via the language’s syntax, semantics, and ecosystem through the eyes of a relatively newcomer to the language. We’ll see how its strong types allow us to code and refactor with confidence. We will leverage the power of Elm’s impressive asynchronous task handling. And of course, we’ll enjoy some of the famously helpful compiler suggestions along the way!</p>"
+      twitter="listrophy"
     %}
     {% include talk.html
       title='Fetching Moths from the Works: Correctness Methods in Software'
@@ -82,13 +108,6 @@
       twitter="sellout"
     %}
     {% include talk.html
-      title='Tulip: A Well-Balanced Language'
-      link="tulip"
-      speaker="Jeanine Adkisson"
-      description="<p>There are a lot of competing ideas about what makes a language “good”. This is because we as language designers still have no idea what we’re doing. The design of Tulip is based on careful study of a wide variety of popular and esoteric programming languages over about 4 years. Its runtime takes cues from Erlang, and its syntax is slightly like ML, but with a few key innovations designed for repl ergonomics. Tulip is one of the new languages to come out of the language community Snek, emphasizing languages by minority designers and implementers.</p>"
-      twitter="jneen_"
-    %}
-    {% include talk.html
       title='Architecture, Front End and a Bit of Front-End Architecture'
       link="architecture-front-end"
       speaker="Jan Hein Hoogstad"
@@ -96,11 +115,11 @@
       twitter="yeehaa"
     %}
     {% include talk.html
-      title='Embarking with Elm'
-      link="embarking-with-elm"
-      speaker="Bradley Grzesiak"
-      description="<p>Elm touts itself as “the best of functional programming in your browser,” so we’ll explore that assertion via the language’s syntax, semantics, and ecosystem through the eyes of a relatively newcomer to the language. We’ll see how its strong types allow us to code and refactor with confidence. We will leverage the power of Elm’s impressive asynchronous task handling. And of course, we’ll enjoy some of the famously helpful compiler suggestions along the way!</p>"
-      twitter="listrophy"
+      title='Negotiating Salary for Women in Tech'
+      link="negotiating-salary"
+      speaker="Ashley Powell"
+      description="<p>I’ve been negotiating salary and rate with and on behalf of IT consultants for years, and firmly believe that a major contributor to the wage gap is that women don’t negotiate their salaries. So from the first job we take, we’re behind the curve and never catch up.</p><p>I’ll present the theories behind how to negotiate and demonstrate how it should actually sound. We’ll cover how to understand your worth, when to stick to your guns and how to use benefits and flexibility to build a great package for yourself. I’ll give an insider’s look into negotiating with recruiters, and give you the tools to establish a firm footing for a great salary negotiation.</p>"
+      twitter="AshleyPQPQP"
     %}
     {% include talk.html
       title='Bracer: Transforming Real-World Languages with Coproducts and Recursion Schemes'
@@ -110,32 +129,11 @@
       twitter="importantshock"
     %}
     {% include talk.html
-      title='Zombie-pocalypse: Epidemic Gossip in Haskell'
-      link="zombie-pocalypse"
-      speaker="Jacques Fuentes"
-      description="<p>Zombies are scary because they’ll eat your brains. Epidemic gossip protocols are awesome because they’re like a zombie apocalpyse—minus the cannabalism. See what it’s like to be a zombie by learning about a Haskell implementation of SWIM, an epidemic gossip protocol.</p><p>When a zombie eats your brains, it becomes infected with a virus that spreads effectively in a biological community. By understanding how zombies will destroy humanity, we’ll see how a cluster of nodes knows when new members join or die, and how that state is propagated in a system.</p><p>Distributed systems are hard, and many Haskell-naysayers think IO is difficult. I’ll show that non-trivial distributed systems can be developed and tested in Haskell with all of its wonderful benefits: reasoning, safety, correctness, and maintainability.</p>"
-      twitter="jpfuentes2"
-    %}
-    {% include talk.html
-      title='It’s Complicated: Codes of Conduct and Inclusive Community Building'
-      link="its-complicated"
-      speaker="Christie Koehler"
-      description="<p>Why are some communities able to quickly and effortlessly adopt a code of conduct while others become mired in conflict and division whenever the topic arises?</p><p>In this talk I’ll explore what I see as the main reasons we experience conflict when talking about adopting codes of conduct in our communities: misalignment of perceived shared values, the relative difficulty of facilitating organizational change, and lack of governance infrastructure and non-technical leadership.</p><p>Next I’ll offer some strategies for making things better: working to close the non-technical leadership gap in our FLOSS communities, learning to embrace multiple viewpoints and integrate conflict productively, and responding compassionately to people’s sense of loss brought about by change.</p>"
-      twitter="christi3k"
-    %}
-    {% include talk.html
-      title='Session Types for Me and You and Everyone We Know!'
-      link="session-types"
-      speaker="Zeeshan Lakhani"
-      description="<p>Concurrent and distributed systems are unwieldy, and many of the patterns we program them with are informally characterized. How can we provide safety mechanisms at runtime and structure inter-process communication? One approach is session types, a formalism to model distributed communicating processes, describing protocols as type abstractions. This talk will cover the basics of what session types are and how they provide a safety net for asynchronous interaction across our increasingly complex platforms and networks.</p><p>The flow of this talk will start with the motivation for the need to formalize communication patterns across actors/channels/processes. Then, I’ll define what session types are and briefly describe their ongoing history. Finally, I’ll describe a couple specific approaches, geared around functional dynamic languages as a form of runtime rejection, for which session types can be applied.</p>"
-      twitter="zeeshanlakhani"
-    %}
-    {% include talk.html
-      title='Planet 9 from Other Space, and Other Things Found in Big(ger) Data'
-      link="planet-9"
-      speaker="Dr. Pamela Gay"
-      description="<p>Modern all-sky surveys are enabling new kinds of discoveries by allowing statistical studies to trace out the locations of hidden planets, pressures, and exoplanets. The most exciting of these discoveries is Planet 9, a new world predicted by the orbits of icy Kuiper Belt Objects and defined by where it <strong>isn’t</strong> in all-sky surveys. It follows on the heels of projects that map out invisible dark matter and describe Dark Energy’s expansion of the universe.This talk will look at how massive data collections have allowed us to detect these and other things that can’t be seen, and how future data sets will make today’s Big Data seem small.</p>"
-      twitter="starstryder"
+      title='Point-Free or Die: Tacit Programming in Haskell and Beyond'
+      link="point-free-or-die"
+      speaker="Amar Shah"
+      description="<p>Point-free syntax allows you to define functions without naming their arguments. But is “point-free” just point-less? Ostensibly, tacit definitions can calibrate code to the appropriate level of abstraction. But which level is most appropriate? When is a point-free definition better than its “pointed” variation? And when is it spectacularly worse?</p><p>Let’s be explicit about tacit programming. Let’s apply eta-reduction to produce it. Let’s probe its origins in John Backus’ function-level programming. Let’s hunt for it in trusted libraries. Let’s see it amplified in languages designed for maximum quiet. Let’s speak at length, about the unspoken.</p>"
+      twitter="amar47shah"
     %}
     {% include talk-hidden.html %}
     {% include talk-hidden.html %}
