@@ -3,4 +3,5 @@ _site
 .jekyll-metadata
 .DS_Store
 css/.DS_Store
+assets/img/*.afdesign
 
