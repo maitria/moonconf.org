@@ -25,7 +25,7 @@
       twitter="switzerly"
       co-twitter="dviramontes_"
     %}
-    <p><strong>Thursday &commat; 11:00 - 11:30</strong> &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 11:00 - 11:30</h4> 
     {% include talk.html
       title='Architecture, Front End and a Bit of Front-End Architecture'
       link="architecture-front-end"
@@ -40,7 +40,7 @@
       description="<p><strong>Thursday &commat; 12:00</strong> &vert; There are a lot of competing ideas about what makes a language “good”. This is because we as language designers still have no idea what we’re doing. The design of Tulip is based on careful study of a wide variety of popular and esoteric programming languages over about 4 years. Its runtime takes cues from Erlang, and its syntax is slightly like ML, but with a few key innovations designed for repl ergonomics. Tulip is one of the new languages to come out of the language community Snek, emphasizing languages by minority designers and implementers.</p>"
       twitter="jneen_"
     %}
-    <p><strong>Thursday &commat; 12:30 - 2:00 &vert; Lunch!</p> 
+    <h4>Lunch &vert; 12:30 - 2:00</h4> 
     {% include talk.html
       title='It’s Complicated: Codes of Conduct and Inclusive Community Building'
       link="its-complicated"
@@ -54,7 +54,7 @@
       speaker="Basel Farag"
       description="<p><strong>Thursday &commat; 2:30</strong> &vert; “@SwiftLang is probably a better, and more valuable, vehicle for learning functional programming than Haskell.” —Erik Meijer</p><p>That may be a stretch with Swift’s recent changes—but it’s not entirely without basis. In this talk, I will show why Swift is a great choice for diving into functional programming. I’ll explain these specific language features: generics, value types, protocols, and closures. I’ll also share my advice for how to approach Swift with the aim of learning FP for the first time.</p>"
     %}
-    <p><strong>Thursday &commat; 3:00 - 3:30</strong> &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 3:00 - 3:30</h4> 
     {% include talk.html
       title="The J Language: Consistency, Adjacency, and Solution-Oriented Programming"
       link="j"
@@ -69,7 +69,7 @@
       description="<p><strong>Thursday &commat; 4:00</strong> &vert; Zombies are scary because they’ll eat your brains. Epidemic gossip protocols are awesome because they’re like a zombie apocalpyse—minus the cannabalism. See what it’s like to be a zombie by learning about a Haskell implementation of SWIM, an epidemic gossip protocol.</p><p>When a zombie eats your brains, it becomes infected with a virus that spreads effectively in a biological community. By understanding how zombies will destroy humanity, we’ll see how a cluster of nodes knows when new members join or die, and how that state is propagated in a system.</p><p>Distributed systems are hard, and many Haskell-naysayers think IO is difficult. I’ll show that non-trivial distributed systems can be developed and tested in Haskell with all of its wonderful benefits: reasoning, safety, correctness, and maintainability.</p>"
       twitter="jpfuentes2"
     %}
-    <p><strong>Thursday &commat; 4:30 - 5:00 &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 4:30 - 5:00</h4> 
     {% include talk.html
       title='Program Derivation for Functional Programs'
       link="program-derivation"
@@ -105,7 +105,7 @@
       description="<p><strong>Friday &commat; 10:30</strong> &vert; Elm touts itself as “the best of functional programming in your browser,” so we’ll explore that assertion via the language’s syntax, semantics, and ecosystem through the eyes of a relatively newcomer to the language. We’ll see how its strong types allow us to code and refactor with confidence. We will leverage the power of Elm’s impressive asynchronous task handling. And of course, we’ll enjoy some of the famously helpful compiler suggestions along the way!</p>"
       twitter="listrophy"
     %}
-    <p><strong>Friday &commat; 11:00 - 11:30 &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 11:00 - 11:30</h4> 
     {% include talk.html
       title='Fetching Moths from the Works: Correctness Methods in Software'
       link="correctness-methods"
@@ -120,7 +120,7 @@
       description="<p><strong>Friday &commat; 12:00</strong> &vert; What are the problems with recursion? How can they be resolved while improving both the performance and clarity of your code? In this talk, we’ll learn how to separate recursion from the semantics of our program using generalized recursion schemes. We’ll discover the benefits that come from that approach and identify some pitfalls that may seem helpful at first. We will also see how to adopt this style gradually in existing projects, gaining the benefits incrementally without disrupting code that already works. Most of the content is language agnostic (but typed), with specific examples given in Haskell and Scala.</p>"
       twitter="sellout"
     %}
-    <p><strong>Friday &commat; 12:30 - 2:00 &vert; Lunch!</p> 
+    <h4>Lunch &vert; 12:30 - 2:00</h4> 
     {% include talk.html
       title='Point-Free or Die: Tacit Programming in Haskell and Beyond'
       link="point-free-or-die"
@@ -135,7 +135,7 @@
       description="<p><strong>Friday &commat; 2:30</strong> &vert; Concurrent and distributed systems are unwieldy, and many of the patterns we program them with are informally characterized. How can we provide safety mechanisms at runtime and structure inter-process communication? One approach is session types, a formalism to model distributed communicating processes, describing protocols as type abstractions. This talk will cover the basics of what session types are and how they provide a safety net for asynchronous interaction across our increasingly complex platforms and networks.</p><p>The flow of this talk will start with the motivation for the need to formalize communication patterns across actors/channels/processes. Then, I’ll define what session types are and briefly describe their ongoing history. Finally, I’ll describe a couple specific approaches, geared around functional dynamic languages as a form of runtime rejection, for which session types can be applied.</p>"
       twitter="zeeshanlakhani"
     %}
-    <p><strong>Friday &commat; 3:00 - 3:30 &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 3:00 - 3:30</h4> 
     {% include talk.html
       title='Negotiating Salary for Women in Tech'
       link="negotiating-salary"
@@ -150,13 +150,20 @@
       description="<p><strong>Friday &commat; 4:00</strong> &vert; Curly-brace languages won the syntax war: the pattern of delimiting scope with curly braces appears in countless programming languages, data interchange formats, and configuration files. However, the small but significant syntactic differences between these languages means that APIs for transforming, filtering, and modifying said languages are, when they exist at all, very specific and inextensible. Bracer is a Haskell-based toolkit for parsing various curly-brace languages that seeks to change this. I’ll outline the challenges associated with building an extensible language workbench, and how borrowing seemingly-abstract concepts (recursion schemes and coproduces) from the functional-programming literature enables us to parse and transform source code safely, concisely, and efficiently.</p>"
       twitter="importantshock"
     %}
-    <p><strong>Friday &commat; 4:30 - 5:00 &vert; Break &amp; conversations</p> 
+    <h4>Break & Conversations &vert; 4:30 - 5:00</h4> 
     {% include talk.html 
       title="Openspace Session Proposals: Lightning&nbsp;Talks"
       link="lightning-talks"
       speaker="You!"
       description="<p><strong>Friday &commat; 5:00 - 5:30</strong> &vert; In preparation for the openspace on Day 3, this is your chance to present (for five minutes or less) on a session you'd like to lead, or at least host.</p><p>Did a project idea come to you during the conference that you'd like to hack on? Maybe you want to find folks who'll learn a new language together. Or talk about your favorite project. Or maybe you'd like to have a session about job searching, empathy, or communication!</p><p>It could be a session about something you want to learn, rather than teach. See if you can entice the speaker who inspired you to come and dive deeper during openspace.</p>"
-      %}
+    %}
+  <h3>Saturday Openspace</h3>
+    {% include talk.html 
+      title="Openspace: Hacking&nbsp;Sessions &amp; Deep&nbsp;Discussions"
+      link="openspace"
+      speaker="everybody"
+      description="<p><strong>All day at Galvanize</strong> &vert; We'll plan the schedule together in the morning, and spend the day in the sessions we've created, working on what we're most excited about. Create the session you want, join other folks, or just hang out.</p><p>Traditional openspace rules:</p><p><ol><li>Whoever comes is the right people</li><li>Whenever it starts is when it starts</li><li>Whatever happens is the only thing that could have</li><li>When it's over, it's over.</li></ol></p>"
+    %}
   </div>
   {% include stars.html %}
 </section>
