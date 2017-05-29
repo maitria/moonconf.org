@@ -1,0 +1,39 @@
+.stars {
+  color: white;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.star {
+  z-index: 1;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 1;
+  animation: twinkle 1s linear infinite;
+}
+
+@keyframes twinkle {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0.2;
+  }
+}
+
+@mixin stars($num, $left, $right) {
+
+  @for $i from 0 through $num {
+    & > .star:nth-child(#{$i})  {
+      $d: random(2) + px;
+      width: $d;
+      height: $d;
+      left: random($left) + px;
+      top: random($right) + px;
+      animation-delay: $i * 0.01s;
+    }
+  }
+
+}

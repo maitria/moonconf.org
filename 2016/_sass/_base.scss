@@ -1,0 +1,180 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+/**
+ * Typography
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,900);
+@import url(https://fonts.googleapis.com/css?family=Neuton:200,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+
+body {
+  font-family: "Roboto Slab";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Orbitron;
+  font-weight: $base-font-weight;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  $color: #421a4f;
+  font-weight: normal;
+  font-size: 22px;
+  color: $color;
+  border-bottom: 1px solid $color;
+}
+
+a {
+  color: rgba($brand-color-blue, 1.0);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 300ms ease;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: rgba($brand-color-blue, 0.75);
+    border-bottom: 1px solid rgba($brand-color-blue, 0.50);
+  }
+}
+
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+       margin-bottom: 0;
+  }
+}
+
+blockquote {
+  $color: $brand-color-blue;
+  color: $grey-color;
+  border-left: 4px solid $color;
+  padding-left: $spacing-unit / 2;
+  font-size: $small-font-size;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    color: $color;
+  }
+}
+
+pre,
+code {
+  font-size: $small-font-size;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: white;
+    }
+  }
+}

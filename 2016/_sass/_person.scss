@@ -1,0 +1,28 @@
+.person {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  box-shadow: -1px 0px 0px 0px rgba($brand-color,0.7);
+  margin-bottom: $spacing-unit;
+  padding: $spacing-unit;
+
+  @media (max-width: 560px) {
+    width: 50%;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.person-image-container {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.person-twitter {
+  color: #552166;
+}

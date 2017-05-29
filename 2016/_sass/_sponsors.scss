@@ -1,0 +1,73 @@
+.sponsors {
+  text-align: center;
+  font-size: 0; // for inline-block .sponsor elements. See https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+  p {
+    font-size: $base-font-size;
+  }
+}
+
+.sponsor-section-title {
+  margin-bottom: $spacing-unit;
+}
+
+.sponsor {
+  width: 100%;
+  display: inline-block;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  vertical-align: top;
+
+  @include media-query($on-palm) {
+    width: auto;
+    display: block;
+  }
+}
+
+.sponsor-silver {
+  width: 50%;
+  display: inline-block;
+  padding-left: $spacing-unit/2;
+  padding-right: $spacing-unit/2;
+  margin-bottom: $spacing-unit;
+  vertical-align: top;
+
+  @include media-query($on-palm) {
+    width: auto;
+    display: block;
+  }
+}
+
+.sponsor-bronze {
+  width: 33%;
+  display: inline-block;
+  padding-left: $spacing-unit/3;
+  padding-right: $spacing-unit/3;
+  margin-bottom: $spacing-unit;
+  vertical-align: top;
+  text-align: left;
+
+  @include media-query($on-palm) {
+    width: auto;
+    display: block;
+  }
+}
+
+.sponsor-bio {
+  padding-top: $spacing-unit;
+}
+
+.sponsor-bio-bronze {
+  padding-top: $spacing-unit;
+  p {
+    font-size: $small-font-size;
+  }
+}
+
+.sponsor-bio-silver {
+  padding-top: $spacing-unit;
+  p {
+    font-size: $mid-font-size;
+  }
+}
+

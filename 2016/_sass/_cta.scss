@@ -1,0 +1,11 @@
+.cta {
+  text-align: center;
+  padding: $spacing-unit;
+  overflow: hidden;
+
+  @include stars(100, 800, 300);
+
+  p {
+    margin-bottom: $spacing-unit;
+  }
+}

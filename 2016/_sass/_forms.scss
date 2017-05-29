@@ -1,0 +1,32 @@
+form {
+  text-align: left;
+  font-family: Orbitron;
+  margin: 1em 0 1em 0;
+}
+
+input[type=text] {
+  border: 1px solid $brand-color;
+  line-height: 3;
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+}
+
+
+.button {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 15px 15px 10px 15px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}

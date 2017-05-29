@@ -1,0 +1,113 @@
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+.main-content {
+  @extend %clearfix;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
+}
+
+ .section-block-header {
+   background: $brand-color;
+   color: white;
+   padding-top: 20px;
+ }
+
+.section-block-title {
+  line-height: 1;
+
+  em {
+    font-size: $small-font-size;
+    vertical-align: middle;
+  }
+}
+
+ .section-block-bold {
+   padding: 40px 0;
+   background: $brand-color;
+   color: white;
+   margin-bottom: 0;
+   text-align: center;
+
+   a {
+     color: white;
+   }
+   h3 {
+     border-bottom: 0;
+     color: white;
+     margin-bottom: 0;
+   }
+   .wrapper {
+     padding: 0;
+   }
+ }
+
+.wrapper {
+  @extend .wrapper;
+}
+
+.section-block-content {
+  padding: $spacing-unit 15px $spacing-unit 15px;
+}
+
+.section-scholarship {
+  .scholarship-wrapper {
+    padding-top: $spacing-unit;
+  }
+  .scholarship-image {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .scholarships-content {
+    float: left;
+    width: 50%;
+  }
+}
+
+.key {
+  overflow: hidden;
+}
+
+.key-half {
+  position: relative;
+  right: -7px;
+}
+
+.key-img {
+  float: left;
+}
+
+.key-body {
+  padding-top: $spacing-unit;
+  font-size: $mid-font-size;
+}
+
+.key-address {
+  display: block;
+}

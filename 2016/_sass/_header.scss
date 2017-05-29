@@ -1,0 +1,44 @@
+.site-header {
+  text-align: center;
+  border-top: 5px solid $brand-color;
+  position: relative;
+  z-index: 1;
+  background: url('/assets/img/cygnus-loop-nebula.jpg');
+  overflow: hidden;
+}
+
+.video-background {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  @media (min-width: 450px) {
+    display: block;
+  }
+}
+
+.logo-container {
+  padding: $spacing-unit 0;
+}
+
+.logo-svg {
+  margin: 0 auto;
+  width: 50%;
+
+  @media (max-width: 400px) {
+    width: 90%;
+  }
+
+  svg {
+    fill: white;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.logo-text {
+  font-family: Orbitron;
+  letter-spacing: 20px;
+  color: white;
+}

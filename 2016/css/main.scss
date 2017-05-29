@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-weight: bold;
+$base-line-height: 1.5;
+$base-font-size:   18px;
+$small-font-size:  14px;
+$mid-font-size:    16px;
+
+$spacing-unit:     30px;
+
+$text-color:         #111;
+$background-color:   white;
+$brand-color:        #552166;
+$brand-color-green:  hsl(140, 59%, 61%);
+$brand-color-blue:   #157EFB;
+$color-light-blue:   rgba(19, 153, 222, 0.53);
+
+$grey-color:       #D0CECE;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$green-color-light: rgba(0, 153, 153, 0.14);
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "syntax-highlighting",
+  "stars",
+  "forms",
+  "tables",
+  "person",
+  "sponsors",
+  "header",
+  "footer",
+  "moon",
+  "cta",
+  "talks",
+  "unconf",
+  "location"
+;
