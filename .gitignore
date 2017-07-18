@@ -4,4 +4,6 @@ _site
 .DS_Store
 css/.DS_Store
 assets/img/*.afdesign
+.ruby-version
+*.swp
 
